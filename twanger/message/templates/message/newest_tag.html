@@ -1,0 +1,6 @@
+{% load message_lists %}
+
+<h2>Latest Twangs</h2>
+{% for message in messages %}
+    {% render_message message %}
+{% endfor %}

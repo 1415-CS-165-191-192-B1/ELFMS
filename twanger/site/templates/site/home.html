@@ -1,0 +1,9 @@
+{% extends 'site/base.html' %}
+
+{% load message_lists %}
+
+{% block heading %}Twanger Homepage{% endblock %}
+
+{% block content %}
+    {% newest_messages 10 %}
+{% endblock %}
