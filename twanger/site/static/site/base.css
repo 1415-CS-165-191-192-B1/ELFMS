@@ -1,13 +1,14 @@
 body {
-    background-color: #123652;
+    background-color: #306b86;
+    margin: 80px;
 }
 
 a {
-    color: white;
+    color: #29506D;
 }
 
 a:visited {
-    color: white;
+    color: #29506D;
 }
 
 div.navigation {
@@ -15,7 +16,8 @@ div.navigation {
 }
 
 div.navigation ul {
-
+    margin: 0;
+    padding: 0;
 }
 
 div.navigation li {
@@ -27,10 +29,15 @@ div.navigation li a {
     background-color: #29506D;
     padding: 4px;
     border-radius: 2px;
+    color: white;
+}
+
+div.navigation li a:visited {
+    color: white;
 }
 
 h1.page-heading {
-    color: white;
+    color: #54c0ff;
 }
 
 div.content {
