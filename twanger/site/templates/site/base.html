@@ -1,10 +1,17 @@
 <html>
-<head></head>
+<head>
+    <link rel="stylesheet" href="{{ STATIC_URL }}site/base.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}message/message.css">
+</head>
 <body>
+
 {% include 'site/nav.html' %}
-<h1>{% block heading %}{% endblock %}</h1>
+
+<h1 class="page-heading">{% block heading %}{% endblock %}</h1>
+
 <div class="content">
     {% block content %}{% endblock %}
 </div>
+
 </body>
 </html>

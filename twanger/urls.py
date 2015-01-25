@@ -12,6 +12,8 @@ urlpatterns = patterns('',
     url(r'^auth/logout/$', site_views.LogoutView.as_view(), name='logout'),
     url(r'^auth/new/success/$', site_views.NewUserSuccessView.as_view(),
         name='new-user-success'),
+
+    url(r'^message/', include('twanger.message.urls')),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

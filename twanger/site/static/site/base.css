@@ -1,0 +1,47 @@
+body {
+    background-color: #123652;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+div.navigation {
+    color: white;
+}
+
+div.navigation ul {
+
+}
+
+div.navigation li {
+    display: inline-block;
+    padding: 1px 10px 1px 1px;
+}
+
+div.navigation li a {
+    background-color: #29506D;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+h1.page-heading {
+    color: white;
+}
+
+div.content {
+    background-color: white;
+    padding: 20px;
+}
+
+div.content a {
+    color: #042037;
+}
+
+div.content a:visited {
+    color: #042037;
+}
