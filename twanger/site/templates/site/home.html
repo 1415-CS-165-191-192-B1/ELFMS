@@ -5,5 +5,10 @@
 {% block heading %}Twanger Homepage{% endblock %}
 
 {% block content %}
+
+    {% if user.is_authenticated %}
+        {% render_message_form %}
+    {% endif %}
+
     {% newest_messages 10 %}
 {% endblock %}
