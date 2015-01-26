@@ -1,3 +1,7 @@
+"""See twanger/site/views.py for documentation on the below.
+"""
+
+
 from django.views import generic
 from django.http import HttpResponseRedirect
 

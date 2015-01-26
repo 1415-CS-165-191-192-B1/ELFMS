@@ -1,7 +1,7 @@
-from django.conf.urls import patterns, include, url
+"""See twanger/urls.py for documentation on the below.
+"""
 
-from django.contrib import admin
-admin.autodiscover()
+from django.conf.urls import patterns, include, url
 
 from twanger.message import views as msg_views
 
