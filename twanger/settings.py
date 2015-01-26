@@ -72,7 +72,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 # The root urlconf is where you define the base urls of the entire application.
-# From here you can include other urlconfs from applications.
+# From here you can include other urlconfs from applications. urls.py is the
+# next place to look after this.
 ROOT_URLCONF = 'twanger.urls'
 
 # A auto generated file like manage.py that provides a WSGI interface to your

@@ -80,8 +80,12 @@ import os
 import sys
 
 if __name__ == "__main__":
+    # Sets the environment variable for the setting module IF it doesnt exist.
+    # We can override it in the ENV if we want.
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "twanger.settings")
 
     from django.core.management import execute_from_command_line
 
+    # executes the command line interface for django using the above settings
+    # module and accepts the arguments from the command line as a parameter.
     execute_from_command_line(sys.argv)
