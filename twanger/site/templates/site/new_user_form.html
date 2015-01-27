@@ -1,3 +1,4 @@
+{# same as login_form.html check there for documents. #}
 <form action="{% url 'new-user' %}" method="post">
     {% csrf_token %}
     {{ new_user_form.as_p }}

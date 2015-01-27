@@ -1,5 +1,6 @@
-<form action="{% url 'msg-post' %}" method="post">
+
+<form action="/message/post/" method="post">
     {% csrf_token %}
-    {{ message_form.as_p }}
-    <input type="submit"/>
+    <p><textarea cols="40" id="id_content" name="content" rows="3"></textarea></p>
+    <input type="submit">
 </form>

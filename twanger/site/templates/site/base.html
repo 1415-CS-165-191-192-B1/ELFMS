@@ -1,14 +1,19 @@
 <html>
 <head>
+    {# Include our stylesheets. {{ STATIC_URL }} is set to whatever is #}
+    {# defined in settings.STATIC_URL #}
     <link rel="stylesheet" href="{{ STATIC_URL }}site/base.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}message/message.css">
 </head>
 <body>
 
+{# Include our navigation template. twanger/site/templates/site/nav.html #}
 {% include 'site/nav.html' %}
 
+{# Define a page block for a heading. #}
 <h1 class="page-heading">{% block heading %}{% endblock %}</h1>
 
+{# Define a page block for our content. #}
 <div class="content">
     {% block content %}{% endblock %}
 </div>

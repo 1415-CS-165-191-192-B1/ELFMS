@@ -1,54 +1,36 @@
 body {
-    background-color: #306b86;
-    margin: 80px;
+    margin: 30px;
+    font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
 }
 
 a {
-    color: #29506D;
+    color: #3aaaff;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #29506D;
-}
-
-div.navigation {
-    color: white;
+    color: #3565B4;
 }
 
 div.navigation ul {
-    margin: 0;
     padding: 0;
 }
 
 div.navigation li {
     display: inline-block;
-    padding: 1px 10px 1px 1px;
 }
 
 div.navigation li a {
-    background-color: #29506D;
     padding: 4px;
-    border-radius: 2px;
-    color: white;
 }
 
 div.navigation li a:visited {
-    color: white;
 }
 
 h1.page-heading {
-    color: #54c0ff;
 }
 
 div.content {
-    background-color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
-div.content a {
-    color: #042037;
-}
-
-div.content a:visited {
-    color: #042037;
-}

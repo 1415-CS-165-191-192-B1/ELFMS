@@ -1,14 +1,25 @@
 {% extends 'site/base.html' %}
+{# We extend from the base template. At this point only the code defined #}
+{# inside `blocks` will be rendered. In out base template we defined the #}
+{# `blocks` heading and content. #}
 
-{% load message_lists %}
+{# Load the template tags from the message app #}
+{% load message_tags %}
 
+{# Override the heading block with our homepage message #}
 {% block heading %}Twanger Homepage{% endblock %}
 
+{# Override our content block with our homepage content #}
 {% block content %}
 
+    {# Check to see if the user is logged in. If they are render a form #}
+    {# to post a new message. #}
     {% if user.is_authenticated %}
+        {# render_message_form is a function in #}
+        {# twanger.message.templatetags.message_tags #}
         {% render_message_form %}
     {% endif %}
 
+    {# Call the newest_messages template tag and get the do newest messages. #}
     {% newest_messages 10 %}
 {% endblock %}
