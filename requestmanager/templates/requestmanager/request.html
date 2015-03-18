@@ -1,0 +1,21 @@
+{% extends "requestmanager/base.html" %}
+
+{% block content %}
+  
+  <h2>Make Request</h2>
+  
+  {% for field in form %}
+    {{field.error}}
+
+  {% endfor %}
+  
+  <form action="/accounts/create_request/" method="post">{% csrf_token %}
+  {{form.as_ul}}
+  
+  
+  
+  <input type="submit" value="Make Request" />
+    
+  </form>
+  
+{% endblock %}
