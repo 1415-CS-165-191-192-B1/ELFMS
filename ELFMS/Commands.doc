@@ -1,0 +1,7 @@
+Commands
+
+python manage.py migrate
+	to look at INSTALLED_APPS
+
+python manage.py startapp [app_name]
+	to crete app
