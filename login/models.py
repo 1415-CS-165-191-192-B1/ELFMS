@@ -4,7 +4,7 @@ from django.db import models
 class UserRoles(models.Model):
     user_role = models.CharField(max_length=200)
 
-    def ___unicode___(self):
+    def __unicode__(self):
         return self.user_role
 
 class Users(models.Model):
@@ -15,5 +15,5 @@ class Users(models.Model):
     password = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
 
-    def ___unicode___(self):
+    def __unicode__(self):
         return self.username
