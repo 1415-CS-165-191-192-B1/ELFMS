@@ -1,0 +1,9 @@
+<h1>{{ r.title }}</h1>
+<p> Author: {{ r.author }}</p>
+<p> Edition {{ r.edition }}</p>
+<p> Subscription Type: {{ r.subscription_type }}</p>
+<p> Publication Year: {{ r.pub_year }}</p>
+<p> Creation Date: {{ r.creation_date }}</p>
+<p> Comment: {{ r.comment }}</p>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<a href="{% url 'request:request' %}">View all requests</a>
