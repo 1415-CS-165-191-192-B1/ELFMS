@@ -1,4 +1,23 @@
 # ELFMS
+<<<<<<< HEAD
+Engineering Library Fund Management System
+
+
+
+
+
+
+
+
+
+
+
+
+Authors:
+* Andaca, Maria April Rose
+* Shen, Mara
+* Ventura, Rowel
+=======
 This project is made for the internal use of the UP Diliman Engineering Library. Only the Librarian Faculty (LFC), Acquisition Librarians, and Engineering Department Chairs can have an account. The project aims to organize the book and journal budget of the eight departments and institute under the College of Engineering.
 
 Features:
@@ -39,3 +58,4 @@ The Authors of this project is from the CS 192 group Fight-On.
 * Dyosa Andaca
 * Mara Shen
 * Rowel Ventura
+>>>>>>> 3ce9c8bc93e422c8e1d7be135bdbb6fa655da661

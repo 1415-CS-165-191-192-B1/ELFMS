@@ -1,0 +1,40 @@
+body {
+	position: relative;
+}
+
+
+#home .segment h1 {
+  font-size: 3em;
+  /*margin-bottom: 1em;*/
+}
+
+#img {
+  background-image: url("../img/melchor.jpg");
+  background-size: cover;
+  height:90%;
+}
+
+#home .header.vertical.segment {
+  padding: 1rem 0rem;
+}
+
+#home .feature.segment {
+  margin: 0em;
+  padding: 5rem 0rem;
+}
+#home .feature.segment p {
+  min-height: 50 px;
+}
+
+p {
+	text-align: justify;
+}
+
+.footer {
+  color: white;
+}
+
+h3 {
+  margin: 0px;
+  padding:10px;
+}
