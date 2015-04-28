@@ -1,0 +1,10 @@
+<a href="{% url 'request:create' %}"> create request </a>
+{% if latest_request %}
+    <ul>
+    {% for resource in latest_request %}
+        <li><a href="{% url 'request:detail' resource.id %}">{{ resource.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No resources are available.</p>
+{% endif %}
