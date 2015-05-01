@@ -16,4 +16,9 @@ class Users(models.Model):
     email = models.CharField(max_length=50)
 
     def __unicode__(self):
-        return self.username
+        return self.username, self.password
+
+    # def auth(username, password):
+    #     self.username = username
+    #     self.password = password
+    #     return self.username
