@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from requestManager.models import resource
-from requestManager.forms import resourceForm
+from django.template import RequestContext
+from requestManager.forms import resourceForm, resourceSearchForm
 
 # Create your views here.
 def reqManager(request):
@@ -26,3 +27,19 @@ def createRequest(request):
 
 def createSuccess(request):
 	return render(request, 'requestManager/success.html')
+
+def search(request):
+	if request.GET:
+		print "yes get"
+		form = resourceSearchForm(request.GET)
+		if form.is_valid():
+			print "form is_valid"
+			results = form.get_result_queryset()
+			print results
+		else:
+			results = []
+	else:
+		form = resourceSearchForm()
+		results = []
+
+	return render_to_response('requestManager/search.html',RequestContext(request, {'form':form, 'results': results,}))
