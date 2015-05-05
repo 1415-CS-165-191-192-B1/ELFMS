@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^(?P<resource_id>\d+)/$', views.detail, name='detail'),
     url(r'^create/$', views.createRequest, name='create'),
     url(r'^create/success/$', views.createSuccess, name='createSuccess'),
+    url(r'^search/$', views.search, name='search'),
 )
