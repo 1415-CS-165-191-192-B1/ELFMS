@@ -18,7 +18,11 @@ class Users(models.Model):
     def __unicode__(self):
         return self.username, self.password
 
-    # def auth(username, password):
-    #     self.username = username
-    #     self.password = password
-    #     return self.username
+    def getUser(username, password):
+        self.password = password
+        try:
+            query="SELECT password from login_users WHERE username =  " + username+ ";"
+        except Exception, e:
+                print e
+        
+        return query
