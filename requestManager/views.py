@@ -4,7 +4,8 @@ from requestManager.models import resource
 from django.template import RequestContext
 from requestManager.forms import resourceForm, resourceSearchForm
 
-# Create your views here.
+
+@login_required
 def reqManager(request):
     latest_request = resource.objects.order_by('title')[:10]
     context = {'latest_request': latest_request}
