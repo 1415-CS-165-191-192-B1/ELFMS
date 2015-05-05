@@ -6,7 +6,7 @@ from requestManager.forms import resourceForm, resourceSearchForm
 
 # Create your views here.
 def reqManager(request):
-    latest_request = resource.objects.order_by('-creation_date')[:10]
+    latest_request = resource.objects.order_by('title')[:10]
     context = {'latest_request': latest_request}
     return render(request, 'requestManager/index.html', context)
     

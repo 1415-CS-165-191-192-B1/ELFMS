@@ -1,9 +1,12 @@
 from django.db.models import Q
 from simple_search import BaseSearchForm
+from django import forms
 from django.forms import ModelForm
 from requestManager.models import resource
 
+
 class resourceForm(ModelForm):
+    comment = forms.CharField(required=False)
     class Meta:
         model = resource
         fields = '__all__'
