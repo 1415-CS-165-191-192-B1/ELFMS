@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'requestManager',
+    'django_jenkins',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,10 +61,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'elfms',
-        'USER': 'mara',
+        'USER': 'marashen',
         'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': '',
+        #'HOST': 'localhost',
+        #'PORT': '',
     }
 }
 
