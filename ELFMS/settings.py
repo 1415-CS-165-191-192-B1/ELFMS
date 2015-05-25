@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'requestManager',
-    'django_jenkins',
 )
 
 MIDDLEWARE_CLASSES = (
