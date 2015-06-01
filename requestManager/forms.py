@@ -7,6 +7,7 @@ from requestManager.models import resource
 
 class resourceForm(ModelForm):
     comment = forms.CharField(required=False)
+    price = forms.DecimalField(required=False)
     class Meta:
         model = resource
         fields = '__all__'

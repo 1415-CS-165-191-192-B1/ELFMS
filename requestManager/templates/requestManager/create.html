@@ -7,10 +7,10 @@
 
 	{% endfor %}
 
-	<form action="{% url 'request:create' %}" method ="POST"> 
+	<form method ="POST"> 
 		{%csrf_token%}
 		{{form.as_ul}}
 
-		<input type="submit" value="Make Request" />
+		<button type="submit">Save</button>
 	</form>
 {% endblock %}

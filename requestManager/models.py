@@ -15,8 +15,8 @@ class resource(models.Model):
     comment = models.CharField(max_length=200, default='')
     #add foreignkey for model ni user from loginapp
     
-    class Meta:
-        unique_together = ('title', 'edition',)
+    # class Meta:
+    #     unique_together = ('title', 'edition',)
 
     def __unicode__(self):
         return self.title
