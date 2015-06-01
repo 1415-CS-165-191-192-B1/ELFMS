@@ -1,0 +1,5 @@
+<ul>
+    {% for resource in results %}
+        <li><a href="{% url 'request:detail' resource.id %}">{{ resource.title }}</a></li>
+    {% endfor %}
+</ul>
