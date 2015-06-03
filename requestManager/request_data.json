@@ -1,0 +1,26 @@
+[
+  {
+    "model": "requestManager.resource",
+    "pk": 1,
+    "fields": {
+      "title" : "tc7",
+      "author" : "leithold",
+      "edition" : "7th",
+      "subscription_type" : False,
+      "pub_year" : 2000,
+      "price" : 500
+      }
+  },
+  {
+    "model": "requestManager.resource",
+    "pk": 2,
+    "fields": {
+      "title" : "a walk to remember",
+      "author" : "Nicholas Sparks",
+      "edition" : "1st",
+      "subscription_type" : False,
+      "pub_year" : 2000,
+      "price" : 900
+      }
+  },
+]
