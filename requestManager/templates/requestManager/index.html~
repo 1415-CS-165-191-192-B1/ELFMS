@@ -1,9 +1,0 @@
-{% if latest_request %}
-    <ul>
-    {% for resource in latest_request %}
-        <li><a href="{% url 'detail' resource.id %}">{{ resource.title }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No resources are available.</p>
-{% endif %}
