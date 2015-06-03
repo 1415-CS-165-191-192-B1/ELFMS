@@ -8,4 +8,6 @@
 <p> Creation Date: {{ r.creation_date }}</p>
 <p> Comment: {{ r.comment }}</p>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<a href="{% url 'request:edit' r.id %}">edit</a>
 <a href="{% url 'request:request' %}">View all requests</a>
