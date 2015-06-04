@@ -1,1 +1,1 @@
-web: gunicorn ELFMS.wsgi --log-file -
+web: gunicorn ELFMS.wsgi

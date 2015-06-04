@@ -1,5 +1,6 @@
 *.pyc
 *.*~
 *~
-
+local_settings.py
+myvenv
 reports
