@@ -3,8 +3,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from requestManager.models import resource
 from django.template import RequestContext
 from requestManager.forms import resourceForm, resourceSearchForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required(login_url='/login/')
 def reqManager(request):
     latest_request = resource.objects.order_by('title')[:10]
     context = {'latest_request': latest_request}

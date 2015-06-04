@@ -13,6 +13,8 @@ from forms import MyRegistrationForm
 from django.contrib.formtools.wizard.views import SessionWizardView
 from django.core.mail import send_mail
 import logging
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 #for login views
 
